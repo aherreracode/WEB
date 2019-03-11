@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shorcout icon" href="img/favicon.ico">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/miestilo.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+    crossorigin="anonymous"></script>
+  <title>HRE</title>
+</head>
+
+<body data-spy="scroll" data-target="#navbar-example2" data-offset="0">
+
+  <div class="container-fluid" >
+    <!-- Este es el NAVBAR-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top" id="navbar-example2">
+      <a class="navbar-brand" href="#"><img src="img/favicon.ico" width="60px"></a>
+
+      <!-- Este es el menu hamburguesa-->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+        <ul class="nav nav-pills">
+          <li class="nav-item ">
+            <a class="nav-link" href="#">Inicio </a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="#carouselExampleIndicators">Especificaciones técnicas</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link " href="#estilo">Estilos</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link " href="#info">Info</a>
+          </li>
+        </ul>
+      
+    </nav>
+
+    <head > 
+      <!-- Este es el carousel -->
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/background.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block comic-sans">
+              <h5>EVO IX - 1</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/background2.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>EVO IX - 2</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/background3.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>EVO IX - 3</h5>
+
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Siguiente</span>
+        </a>
+      </div>
+    </head>
+
+    <section>
+      <!-- Este es el jumbotron -->
+      <div class="jumbotron" data-spy="scroll" data-target="#navbar-example2" data-offset="0">
+        <h1 class="display-4">The Evo IX That Can Do It All</h1>
+        <p class="lead">The heart is a stout Ronnie-built 2.3-liter stroker pushed by a Garrett GTX3576R producing full boost at 4,100rpm and making 620awhp and 550awtq at 31psi on a Mustang dyno.</p>
+        <hr class="my-4">
+        <p>Rellena el formulario, escoge tu estilo y únete al club!</p>
+
+        <!-- Button trigger modal -->
+        <button id="estilo" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#exampleModal">Rellenar el formulario </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Formulario</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body" >
+                <!--Comienzo del formulario-->
+                  <form method="POST" action="mailto:aherrera.code@outlook.com">
+                    <div class="form-group">
+                      <label for="name">Nombre:</label>
+                      <input type="text" class="form-control" id="nombre" placeholder="Introduce tu nombre" name="nombre">
+                    </div>
+                    <div class="form-group">
+                      <label for="email">Email:</label>
+                      <input type="email" class="form-control" id="email" placeholder="Introduce tu email" name="email">
+                    </div>
+                    <div class="form-group">
+                      <label for="pwd">Contraseña:</label>
+                      <input type="password" class="form-control" id="pwd" placeholder="Introduce tu contraseña" name="pswd">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect1">Selecciona estilo de coche:</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                          <option>Euro</option>
+                          <option>JDM</option>
+                          <option>Muscle</option>
+                        </select>
+                      </div>
+                    <div class="form-group form-check">
+                      <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox" name="remember"> Acepto los términos de contrato
+                      </label>
+                    </div>
+                    <button type="submit" class="btn btn-primary" >Submit</button>
+                  </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section >
+        <h2 class="display-4 text-center" >Estilos</h2>
+        <div id="info" class="card-deck p-3">
+            <div class="card">
+              <img class="card-img-top" src="img/euro.jpeg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Euro</h5>
+                <p class="card-text">Los coches mas potentes de la Unión Europea.</p>
+              </div>
+            </div>
+            <div class="card">
+              <img class="card-img-top" src="img/japo.jpeg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">JDM</h5>
+                <p class="card-text">Los mejores coches de drifting y touges japoneses.</p>
+              </div>
+            </div>
+            <div class="card">
+              <img class="card-img-top" src="img/musclecar.jpeg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Muscle cars</h5>
+              <p class="card-text">Muscle cars, originarios de estados unidos.</p>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <section >
+      <div class="container-fluid p-4">
+        <div class="row">
+          <div class="col-sm12 col-md-6 container-fluid">
+            <dl class="text-center p-5">
+                <h3>Dirección</h3>
+                <dd>Málaga</dd>
+                <h3>Teléfono</h3>
+                <dd>664 43 35 36</dd>
+                <h3>Correo</h3>
+                <dd>aherrera.code@outlook.com</dd>
+            </dl>
+          </div> 
+          <div class="col-sm12 col-md-6 embed-responsive embed-responsive-16by9">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d204558.7853282989!2d-4.564274214659936!3d36.7650249915742!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72f6698d30d151%3A0x403d278a576e680!2zTcOhbGFnYQ!5e0!3m2!1ses!2ses!4v1549988270889" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+          </div>   
+        </div>
+      </div>
+    </section>
+
+
+
+  </div>
+
+</body>
+
+</html>
